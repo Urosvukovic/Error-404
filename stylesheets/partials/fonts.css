@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "mainFont";
+  src: url("../fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bigFont";
+  src: url("../fonts/Lato-Hairline.ttf") format("truetype");
+}

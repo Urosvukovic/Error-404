@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "mainFont";
+  src: url("../fonts/Lato-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "bigFont";
+  src: url("../fonts/Lato-Hairline.ttf") format("truetype");
+}
+/* line 4, ../sass/style.scss */
+.main {
+  background-image: url("../img/background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-family: mainFont;
+}
+/* line 12, ../sass/style.scss */
+.main img {
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+/* line 18, ../sass/style.scss */
+.content {
+  position: absolute;
+  bottom: 30%;
+  left: 35%;
+}
+/* line 22, ../sass/style.scss */
+.content h1, .content h2 {
+  text-align: center;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+/* line 28, ../sass/style.scss */
+.content h1 {
+  font-size: 120px;
+  font-family: bigFont;
+}
+/* line 32, ../sass/style.scss */
+.content h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+/* line 36, ../sass/style.scss */
+.content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+/* line 42, ../sass/style.scss */
+.content .btn {
+  color: #FFF;
+  font-size: 15px;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid #FFF;
+  text-transform: uppercase;
+  background-color: rgba(255, 255, 255, 0);
+  position: relative;
+  left: 35%;
+  transition: 0.2s linear;
+}
+/* line 54, ../sass/style.scss */
+.content .btn i {
+  display: inline-block;
+  font-size: 18px;
+}
+/* line 59, ../sass/style.scss */
+.content .btn:hover {
+  background-color: #FFF;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid rgba(255, 255, 255, 0);
+}
+/* line 66, ../sass/style.scss */
+.content .btn:active {
+  background-color: rgba(255, 255, 255, 0);
+  color: #FFF;
+  cursor: pointer;
+  border: 2px solid #55EFDC;
+}
+/* line 73, ../sass/style.scss */
+.content .btn:focus {
+  outline: 0;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px) {
+  /* line 80, ../sass/style.scss */
+  .main {
+    background-image: url("../img/background-1300.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* line 89, ../sass/style.scss */
+  .content {
+    position: absolute;
+    bottom: 25%;
+    left: 30%;
+  }
+}
+@media screen and (min-width: 750px) and (max-width: 999px) {
+  /* line 97, ../sass/style.scss */
+  .main {
+    background-image: url("../img/background-1000.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* line 106, ../sass/style.scss */
+  .content {
+    position: absolute;
+    bottom: 20%;
+    left: 25%;
+  }
+}
+@media screen and (max-width: 749px) {
+  /* line 114, ../sass/style.scss */
+  .main {
+    background-image: url("../img/background-750.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  /* line 123, ../sass/style.scss */
+  .content {
+    position: absolute;
+    bottom: 20%;
+    left: 15%;
+  }
+}
